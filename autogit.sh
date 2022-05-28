@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Atividade 2 ok"
+git commit -m "README & images add"
 git push
 git status
