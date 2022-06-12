@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Atvidade 04 -> done"
+git commit -m "MainActivity -> remake"
 git push
 git status
