@@ -1,4 +1,4 @@
 git add -A
-git commit -m "MainActivity -> remake"
+git commit -m "README -> ok"
 git push
 git status
