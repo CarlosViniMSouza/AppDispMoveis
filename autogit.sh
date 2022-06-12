@@ -1,4 +1,4 @@
 git add -A
-git commit -m "README -> ok"
+git commit -m "Questao04.java -> added"
 git push
 git status
