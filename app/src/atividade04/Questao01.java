@@ -23,14 +23,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    public void RetornarNumeros(View view) {
+    public void RetornarMaior(View view) {
         double n1 = Double.parseDouble(Numero01.getText().toString());
 
-        if (n1 >= 0) {
-            Resultado01.setText("Positivo");
-        }
-        else {
-            Resultado01.setText("Negativo");
-        }
+        Resultado01.setText("O Quadrado desse numero: " + (n1 * n1));
     }
 }

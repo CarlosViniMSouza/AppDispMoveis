@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     EditText Numero01;
+    EditText Numero02;
     TextView Resultado01;
 
     @Override
@@ -19,18 +20,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Numero01 = findViewById(R.id.Numero01);
+        Numero02 = findViewById(R.id.Numero02);
         Resultado01 = findViewById(R.id.Resultado01);
     }
 
     @SuppressLint("SetTextI18n")
-    public void RetornarNumeros(View view) {
+    public void RetornarMaior(View view) {
         double n1 = Double.parseDouble(Numero01.getText().toString());
+        double n2 = Double.parseDouble(Numero02.getText().toString());
 
-        if (n1 >= 0) {
-            Resultado01.setText("Positivo");
+        if (n1 > n2) {
+            Resultado01.setText("O Maior Numero eh: " + n1);
+        } else {
+            Resultado01.setText("O Maior Numero eh: " + n2);
         }
-        else {
-            Resultado01.setText("Negativo");
-        }
+
     }
 }

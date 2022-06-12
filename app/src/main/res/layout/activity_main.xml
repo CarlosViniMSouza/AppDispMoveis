@@ -6,38 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/Numero04"
-        android:layout_width="146dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="160dp"
-        android:ems="10"
-        android:inputType="textPersonName|numberDecimal"
-        android:text="Numero04"
-        app:layout_constraintBottom_toTopOf="@+id/Resultado02"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Numero03"
-        app:layout_constraintTop_toBottomOf="@+id/Numero02" />
-
-    <EditText
-        android:id="@+id/Numero03"
-        android:layout_width="146dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="162dp"
-        android:ems="10"
-        android:inputType="textPersonName|numberDecimal"
-        android:text="Numero03"
-        app:layout_constraintBottom_toTopOf="@+id/Resultado01"
-        app:layout_constraintEnd_toStartOf="@+id/Numero04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Numero01" />
-
     <ImageView
         android:id="@+id/logoIFAM"
         android:layout_width="238dp"
@@ -45,121 +13,55 @@
         android:layout_marginStart="86dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="87dp"
+        android:layout_marginBottom="43dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toTopOf="@+id/Numero01"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ifam"
-        android:contentDescription="TODO" />
-
-    <Button
-        android:id="@+id/Somar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="7dp"
-        android:onClick="Somar"
-        android:text="Somar"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/Sub"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoIFAM" />
+        app:srcCompat="@drawable/ifam" />
 
     <TextView
         android:id="@+id/Resultado01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="143dp"
         android:text="Resultado01"
         android:textColor="@color/teal_200"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Resultado02"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/Sub"
+        android:id="@+id/Retornar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="Sub"
-        android:text="Sub"
-        app:layout_constraintEnd_toStartOf="@+id/Mult"
-        app:layout_constraintStart_toEndOf="@+id/Somar"
-        app:layout_constraintTop_toBottomOf="@+id/logoIFAM" />
-
-    <Button
-        android:id="@+id/Mult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="Mult"
-        android:text="Mult"
-        app:layout_constraintEnd_toStartOf="@+id/Div"
-        app:layout_constraintStart_toEndOf="@+id/Sub"
-        app:layout_constraintTop_toBottomOf="@+id/logoIFAM" />
-
-    <Button
-        android:id="@+id/Div"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
-        android:onClick="Div"
-        android:text="Div"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="71dp"
+        android:onClick="RetornarNumeros"
+        android:text="Retornar"
+        app:layout_constraintBottom_toTopOf="@+id/Resultado01"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Mult"
-        app:layout_constraintTop_toBottomOf="@+id/logoIFAM" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Numero01" />
 
     <EditText
         android:id="@+id/Numero01"
         android:layout_width="146dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="47dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="133dp"
         android:ems="10"
         android:inputType="textPersonName|numberDecimal"
         android:text="Numero01"
-        app:layout_constraintBottom_toTopOf="@+id/Numero03"
-        app:layout_constraintEnd_toStartOf="@+id/Numero02"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Somar" />
-
-    <EditText
-        android:id="@+id/Numero02"
-        android:layout_width="143dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="44dp"
-        android:ems="10"
-        android:inputType="textPersonName|numberDecimal"
-        android:text="Numero02"
-        app:layout_constraintBottom_toTopOf="@+id/Numero04"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Numero01"
-        app:layout_constraintTop_toBottomOf="@+id/Mult" />
-
-    <TextView
-        android:id="@+id/Resultado02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="40dp"
-        android:text="Resultado02"
-        android:textColor="@color/teal_200"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoIFAM" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

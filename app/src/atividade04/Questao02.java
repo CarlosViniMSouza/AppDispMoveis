@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
     public void RetornarNumeros(View view) {
         double n1 = Double.parseDouble(Numero01.getText().toString());
 
-        if (n1 >= 0) {
-            Resultado01.setText("Positivo");
-        }
-        else {
-            Resultado01.setText("Negativo");
-        }
+        Resultado01.setText("Antecessor: " + (n1 - 1) + " | Sucessor: " + (n1 + 1));
     }
 }
