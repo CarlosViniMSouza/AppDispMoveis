@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Questao04.java -> added"
+git commit -m "Atividade 02 -> fixed"
 git push
 git status
